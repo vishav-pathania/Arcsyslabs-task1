@@ -17,6 +17,9 @@ module.exports = {
         header: ["var(--font-open-sans)", "sans-serif"],
         body: ["var(--font-poppins)", "sans-serif"],
       },
+      colors: {
+        primary: "#F3AE9F",
+      },
     },
   },
   plugins: [],
