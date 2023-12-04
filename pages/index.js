@@ -4,10 +4,10 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="bg-[#050505] px-[150px] pt-10 min-h-screen">
+    <div className="bg-[#050505] px-[20px] md:px-[50px] lg:px-[80px] xl:px-[110px] 2xl:px-[150px] transition-all duration-300 pt-10 min-h-screen">
       <Header />
       <Sidebar />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

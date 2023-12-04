@@ -9,3 +9,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/*Hide scrollbal*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*Hide scrollbar*/
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
