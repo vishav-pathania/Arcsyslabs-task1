@@ -29,7 +29,7 @@ const Index = () => {
         {/* Conditionally render Startchat based on screen size */}
         {!isMobileScreen && <Startchat />}
       </div>
-      <div className="relative pt-20 pb-10">
+      <div className="relative pt-20 pb-20">
         <Footer />
       </div>
     </div>

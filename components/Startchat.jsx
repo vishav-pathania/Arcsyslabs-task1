@@ -24,7 +24,7 @@ const Startchat = () => {
                     </div>
                 </div>
                 <div className='bg-[#181818] flex-1 rounded-b-[10px]'>
-                    <div className='m-5'>
+                    <div className='m-8'>
                         <Image src={chaticon} alt='' className='m-auto'></Image>
                         <p className='font-body font-semibold text-white text-xl text-center'>Click on a chat to start!</p>
                     </div>
