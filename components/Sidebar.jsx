@@ -60,7 +60,7 @@ const Sidebar = () => {
       ))}
       <div className="mt-[30px] bg-[#3F3F3F] lg:w-[440px] sm:w-[20px] h-[1px]">
       </div>
-      <div className="flex mt-[30px] mb-10">
+      <div className="flex mt-[30px]">
         <Image src={add} alt=""></Image>
         <p className="font-normal font-body text-[22px] text-[#FFFFFF] ml-4">Create new bot</p>
       </div>

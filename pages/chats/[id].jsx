@@ -48,7 +48,7 @@ const ChatPage = () => {
     
 
     return (
-        <div className="bg-[#050505] flex flex-col px-[10px] md:px-[50px] lg:px-[80px] xl:px-[110px] 2xl:px-[150px] transition-all duration-300 lg:pt-10 relative">
+        <div className="bg-[#050505] flex flex-col px-[10px] md:px-[50px] lg:px-[80px] xl:px-[110px] 2xl:px-[150px] transition-all duration-300 max-h-full lg:pt-10 relative">
             <Header />
             <div className="flex">
                 <div className='hidden lg:block'>
@@ -126,7 +126,7 @@ const ChatPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative pt-20 pb-10">
+            <div className="mb-10 pt-20 pb-10">
                 <Footer />
             </div>
         </div>

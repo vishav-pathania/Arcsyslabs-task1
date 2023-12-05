@@ -22,14 +22,14 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="bg-[#050505] flex flex-col px-[20px] md:px-[50px] lg:px-[80px] xl:px-[110px] 2xl:px-[150px] transition-all duration-300 pt-10 relative">
+    <div className="bg-[#050505] flex flex-col px-[20px] md:px-[50px] lg:px-[80px] xl:px-[110px] 2xl:px-[150px] transition-all duration-300 pt-10 max-h-full relative">
       <Header />
       <div className="flex flex-1">
         <Sidebar />
         {/* Conditionally render Startchat based on screen size */}
         {!isMobileScreen && <Startchat />}
       </div>
-      <div className="relative pt-20 pb-20">
+      <div className="mb-10 pt-20 pb-10">
         <Footer />
       </div>
     </div>
