@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Chat from "@/public/Chat.svg"
 import person from "@/public/person.svg"
+import add from "@/public/add.svg"
 import { useState } from "react";
+
 
 
 const Sidebar = () => {
@@ -56,6 +58,12 @@ const Sidebar = () => {
           </div>
         </Link>
       ))}
+      <div className="mt-[30px] bg-[#3F3F3F] lg:w-[440px] sm:w-[20px] h-[1px]">
+      </div>
+      <div className="flex mt-[30px]">
+        <Image src={add} alt=""></Image>
+        <p className="font-normal font-body text-[22px] text-[#FFFFFF] ml-4">Create new bot</p>
+      </div>
     </div>
   );
 };

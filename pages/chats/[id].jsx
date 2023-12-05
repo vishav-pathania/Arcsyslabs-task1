@@ -45,18 +45,22 @@ const ChatPage = () => {
         }
     };
 
+    
+
     return (
-        <div className="bg-[#050505] flex flex-col px-[20px] md:px-[50px] lg:px-[80px] xl:px-[110px] 2xl:px-[150px] transition-all duration-300 pt-10 h-screen relative">
+        <div className="bg-[#050505] flex flex-col px-[10px] md:px-[50px] lg:px-[80px] xl:px-[110px] 2xl:px-[150px] transition-all duration-300 lg:pt-10 relative">
             <Header />
-            <div className="flex max-h-[1078px] overflow-y-auto">
+            <div className="flex">
+                <div className='hidden lg:block'>
                 <Sidebar />
-                <div className='flex flex-col flex-1 ml-[30px] mt-20'>
-                    <div className='bg-[#2f2f2f] flex justify-between items-center rounded-t-[10px]'>
+                </div>
+                <div className='flex flex-col flex-1 lg:ml-[30px] lg:mt-20'>
+                    <div className='bg-[#2f2f2f] flex justify-between items-center  rounded-t-[10px]'>
                         <div className="flex items-center">
-                            <Image src={person} alt='' className="ml-8 py-4" >
+                            <Image src={person} alt='' className="lg:ml-8 lg:py-4 sm:ml-4 sm:py-2 ml-2 py-1" >
                             </Image>
                             {selectedContact ? (
-                                <p className='font-header font-semibold text-[14px] text-white ml-4'>
+                                <p className='font-header font-semibold text-[14px]  text-white lg:ml-4 sm:ml-2 ml-1'>
                                     {selectedContact.name}
                                 </p>) : null}
                         </div>
@@ -67,7 +71,7 @@ const ChatPage = () => {
                             <p className='ml-3 mr-6 font-body font-normal text-white text-[18px]'>Delete</p>
                         </div>
                     </div>
-                    <div className='bg-[#181818] flex-1 flex flex-col h-[1004px] overflow-y-auto rounded-b-[10px] p-[30px]'>
+                    <div className='bg-[#181818] flex-1 flex flex-col lg:max-h-[450px] overflow-y-auto rounded-b-[10px] p-[30px]'>
                         <div className='flex-1 flex flex-col justify-end'>
                             <div className='flex flex-col justify-end'>
                                 {/* Displaying existing messages */}
@@ -88,7 +92,7 @@ const ChatPage = () => {
                                     return (
                                         <div
                                             key={message.id}
-                                            className={`flex items-center my-3 ${isYouSender ? 'justify-end' : ''}`}
+                                            className={`flex items-center my-[6px] ${isYouSender ? 'justify-end' : ''}`}
                                         >
                                             {!isSameSender && !isYouSender && (
                                                 <Image src={person} alt='' />
@@ -115,14 +119,14 @@ const ChatPage = () => {
                                 value={newMessage}
                                 onChange={e => setNewMessage(e.target.value)}
                                 placeholder="Message"
-                                className='bg-[#2F2F2F] flex-1 mt-[30px] rounded-full border-none h-[50px] pl-5 font-body font-normal text-[#7F8781] text-[16px]'
+                                className='bg-[#2F2F2F] w-[25px] flex-1 mt-[15px] rounded-full border-none h-[50px] pl-5 font-body font-normal text-[#7F8781] text-[16px]'
                             />
-                            <button onClick={handleSendMessage} className='pl-4 mt-[30px]'><Image src={send} alt=''></Image></button>
+                            <button onClick={handleSendMessage} className='lg:pl-4 lg:mt-4 pl-2 mt-[8px]'><Image src={send} alt=''></Image></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="relative pt-20 pb-[100px]">
+            <div className="relative pt-20 pb-10">
                 <Footer />
             </div>
         </div>

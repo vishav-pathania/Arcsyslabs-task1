@@ -10,17 +10,17 @@ const Footer = () => {
       <div className="bg-[#050505] flex items-center flex-1">
         <Link
           href="#"
-          className="text-[38px] font-bold text-primary font-header"
+          className="lg:text-[38px] sm:text-sm font-bold text-primary font-header"
         >
           Logo
         </Link>
       </div>
-      <div className="h-8 font-body font-normal text-white items-center py-1">
+      <div className="font-body lg:text-[18px] sm:text-xs text-[12px] font-normal text-white items-center py-1">
         Contact@00000000.tech
       </div>
-      <Image src={Telegram} alt="" className="ml-5" ></Image>
-      <Image src={Instagram} alt="" className="ml-4" ></Image>
-      <Image src={Twitter} alt="" className="ml-4" ></Image>
+      <Image src={Telegram} alt="" className="lg:ml-5 sm:ml-3 ml-2" ></Image>
+      <Image src={Instagram} alt="" className="lg:ml-4 sm:ml-3 ml-2" ></Image>
+      <Image src={Twitter} alt="" className="lg:ml-4 sm:ml-3 ml-2"></Image>
     </div>
   );
 };
