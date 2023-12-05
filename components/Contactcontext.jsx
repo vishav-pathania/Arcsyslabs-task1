@@ -20,7 +20,8 @@ export const ContactProvider = ({ children }) => {
       lastMessage: 'Lorem ipsum dolor sit am..',
       messages: [
         { id: 1, sender: 'Letty Bride', text: 'Hello!', timestamp: new Date() },
-        { id: 2, sender: 'You', text: 'Hi Letty!', timestamp: new Date() },
+        { id: 1, sender: 'Letty Bride', text: 'How are you?', timestamp: new Date() },
+        { id: 3, sender: 'You', text: 'Hi Letty!', timestamp: new Date() },
         // Add more messages as needed
       ]
     },
